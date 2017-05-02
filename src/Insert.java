@@ -17,7 +17,7 @@ public static void insert(String email, String player) {
 		Connection connection = null;
 		long currentTime = System.nanoTime();  //current time
 		try{
-			String url = "jdbc:sqlite:/home/pi/server/db/pmr.db";
+			String url = "jdbc:sqlite:/home/ec2-user/server/db/pmr.db";
 			connection = DriverManager.getConnection(url);
 			String sql = "INSERT INTO Timeq(Email, Player, Timestamp)"
 					+ " VALUES(?,?,?)";
